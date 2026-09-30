@@ -1,5 +1,5 @@
 # latex-to-word
-A single-file Python script that converts a LaTeX (`.tex`) file into a Word (`.docx`) document. It's meant for papers and handouts that mix ordinary prose with math and and numbered linguistic examples with glosses, typeset with the ExPex package.
+A single-file Python script aimed at linguists that converts a LaTeX file into a Word document. It's meant for papers and handouts that mix ordinary prose with math and numbered linguistic examples with glosses. It works for documents typeset using the ExPex package.
 
 ## Features
 
