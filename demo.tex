@@ -1,0 +1,123 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8
+
+\documentclass{article}
+\usepackage{fontspec}
+\usepackage{mathpazo}
+\usepackage{expex}
+\lingset{exnoformat=(X)}
+\setlength\parindent{0pt}
+
+\begin{document}
+
+\section{Basic examples}
+
+\ex<ex:basic>
+\begingl
+\gla Ich habe den Mann gesehen//
+\glb I have.\textsc{1sg} the.\textsc{acc} man see.\textsc{ptcp}//
+\glft `I have seen the man.'//
+\endgl
+\xe
+
+As shown in (\getref{ex:basic}), German is fine. Now an ungrammatical one, see (\nextx):
+
+\ex
+\ljudge{*}\begingl
+\gla Ich Mann habe gesehen den//
+\glb I man have seen the//
+\glft `Intended: I have seen the man.'//
+\endgl
+\xe
+
+The previous example was (\lastx) and (\lastx{}) is bad. Next, sub-examples:
+
+\pex<ex:parts>
+Consider the following data from Turkish and Basque:
+\a<tur> \begingl
+\gla Ali kitab{\i}-n{\i} oku-du//
+\glb Ali book-\textsc{3sg.poss-acc} read-\textsc{pst}//
+\glft `Ali read his book.'//
+\endgl
+\a<eus> \begingl
+\gla Jon-ek liburua irakurri du//
+\glb Jon-\textsc{erg} book.\textsc{abs} read \textsc{aux}//
+\glft `Jone has read the book.'//
+\endgl
+\a A plain text part with \textit{italics} and \textbf{bold}, plus \'{e}, \"o, and \c{c}.
+\xe
+
+Compare (\getfullref{ex:parts.tur}) with (\getfullref{ex:parts.eus}); (\getref{ex:parts.eus}) is Basque.
+
+\ex[exno=12a]
+\begingl
+\gla Special numbered example//
+\glb spécial numéroté exemple//
+\glft `Special number.'//
+\endgl
+\xe
+
+\ex
+\begingl
+\gla Dieses Beispiel hat sehr viele W\"orter, sodass die Glosse umbrochen werden muss, weil sie nicht in eine Zeile passt und noch mehr Worte hat//
+\glb this.\textsc{n.nom} example has very many word.\textsc{pl} so.that the gloss wrapped be must because it not in one line fits and even more words has//
+\glft `This example has so many words that the gloss must be wrapped.'//
+\endgl
+\xe
+
+\pex[labeltype=alpha]
+\a Outer part with nested roman:
+\pex[labeltype=roman]
+\a First sub \begingl
+\gla x y//
+\glb X Y//
+\endgl
+\a Second sub
+\xe
+\a Back to outer
+\xe
+
+\ex~
+\begingl[glstyle=nlevel]
+\glpreamble Nlevel preamble text\endpreamble
+Maria[Mary/N.\textsc{nom}] liebt[loves/V.\textsc{3sg}] Peter[Peter/N.\textsc{acc}]
+\glft `Mary loves Peter.'
+\endgl
+\xe
+
+\ex
+\begingl
+\gla k- wapm -a -s’i -m -wapunin -uk //
+\glb CL V AGR NEG AGR TNS AGR //
+\glb 2 see {\sc 3acc} {} {\sc 2pl} preterit {\sc 3pl} //
+\glft ‘you (pl) didn’t see them’//
+\endgl
+\xe
+
+
+
+\ex
+\begingl[glstyle=nlevel,glneveryline={\it}]
+{\rightcomment{[Potawatami]}k-}[\rightcomment{category}Cl/2]
+wapm[V/see]
+-a[Agr$_1$/\sc 3acc]
+-s’i[Neg]
+-m[Agr$_2$/\sc 2pl]
+-wapunin[Tns/peterit]
+-uk[Agr$_3$/\sc 3pl]
+\glft ‘you (pl) didn’t see them’\trailingcitation{(Hockett 1948,
+	p. 143)}
+\endgl
+\xe
+
+\pex
+\a\relax [Which pilot who shot at it$_1$]$_2$ hit [which MIG$_2$ that had
+chased him$_2$]$_1$?\trailingcitation{(Barss, 2000)}
+\a\relax [Which pilot who shot at it$_1$]$_2$ hit [which MIG$_2$ that had
+chased him$_2$]$_1$?\trailingcitation{(Higgenbotham and May, 1981)}
+\xe
+
+
+
+
+\end{document}
