@@ -15,7 +15,7 @@ A single-file Python script aimed at linguists that converts a LaTeX file into a
   ```bash
   pip install python-docx
   ```
-- [`texmath`](https://github.com/jgm/texmath) — only needed if your document contains equations *or*, more generally, any dollar sign. (E.g. if you protected indices in movement structures with dollar signs as in $[\ldots]_{i}$ or [\ldots]$_{i}$, the script will try to find `texmath`. it will as for it). This is a small command-line tool (not a Python package) that does the LaTeX-to-OMML conversion. Install it with [Haskell's Cabal](https://www.haskell.org/cabal/) or [Stack](https://docs.haskellstack.org/):
+- [`texmath`](https://github.com/jgm/texmath) — only needed if your document contains equations *or*, more generally, any dollar sign. (E.g. if you protected indices in movement structures with dollar signs as in $\ldots_{i}$ or \ldots$_{i}$, the script will try to find `texmath`. it will as for it). This is a small command-line tool (not a Python package) that does the LaTeX-to-OMML conversion. Install it with [Haskell's Cabal](https://www.haskell.org/cabal/) or [Stack](https://docs.haskellstack.org/):
   
   ```bash
   cabal install -fexecutable texmath      # installs to ~/.cabal/bin/texmath
