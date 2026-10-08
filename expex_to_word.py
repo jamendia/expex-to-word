@@ -1,5 +1,5 @@
 """
-latex_to_word.py -- LaTeX to Word (.docx) converter with equation and expex support
+expex_to_word.py -- LaTeX to Word (.docx) converter with equation and expex support
 
 Converts LaTeX .tex files to Word documents, handling:
   * LaTeX structure: sections/subsections, itemize/enumerate, tables, comments
